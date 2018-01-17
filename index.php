@@ -136,7 +136,11 @@
 
                 <div class="row">
                   <?php foreach ($value['imagesURL'][$language] as &$image) { ?>
-                  <div class="block"><a target="_blank" href="<?php echo $image; ?>"><img class="thumbnail" src="<?php echo $image; ?>" alt="Paris"></a> <div>Samsung Galaxy</div></div>
+                  <div class="block"><a target="_blank" href="<?php echo $image; ?>"><img class="thumbnail" src="<?php echo $image; ?>" alt="Paris"></a> 
+                    <div><?php $file_name = basename($image);  
+                            $name = preg_replace('/\\.[^.\\s]{3,4}$/', '', $file_name);
+                            echo $name; ?>
+                    </div></div>
                   <? } } ?>
                 </div>
 
