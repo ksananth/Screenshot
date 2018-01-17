@@ -1,2 +1,1 @@
-# Screenshot
-Parse folder and show in web
+# This will parse folder and show in a webpage
