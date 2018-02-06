@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+
     <?php
       	$path="images/";
       	$dir = new DirectoryIterator($path);
@@ -105,7 +106,13 @@
             <img src="assets/img/ic_launcher_customer.png" alt="Global">
             <p>Become a Retail Customer</p>
           </a>
-         
+         <div class="onoffswitch">
+                 <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                 <label class="onoffswitch-label" for="myonoffswitch">
+                     <span class="onoffswitch-inner"></span>
+                     <span class="onoffswitch-switch"></span>
+                 </label>
+             </div>
           <div class="header--nav-toggle">
             <span></span>
           </div>
